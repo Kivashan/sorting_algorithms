@@ -13,6 +13,9 @@ void selection_sort(int *array, size_t size)
 	int tmp;
 	size_t i = 0, j;
 
+	if (!array)
+		return;
+
 	for (i = 0; i < size; i++)
 	{
 		for (j = i + 1; j < size; j++)
